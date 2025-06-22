@@ -32,7 +32,7 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
 	// Spring Boot Starter Web
-	implementation 'org.springframework.boot:spring-boot-starter-web:2.6.7'
+	implementation 'org.springframework.boot:spring-boot-starter-web:3.5.3'
 
 	// Jackson
 	implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.3'
