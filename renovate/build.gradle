@@ -38,7 +38,7 @@ dependencies {
 	implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.3'
 
 	// Apache Commons
-	implementation 'org.apache.commons:commons-lang3:3.11'
+	implementation 'org.apache.commons:commons-lang3:3.17.0'
 
 	// SLF4J
 	implementation 'org.slf4j:slf4j-api:1.7.25'
