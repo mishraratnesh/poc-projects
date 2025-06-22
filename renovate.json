@@ -1,6 +1,6 @@
 {
   "extends": ["config:base"],
-  "enabledManagers": ["gradle", "gradle-wrapper", "gradle-version-catalog"],
+  "enabledManagers": ["gradle", "gradle-wrapper"],
   "dependencyDashboard": true,
   "prHourlyLimit": 2,
   "prConcurrentLimit": 5,
