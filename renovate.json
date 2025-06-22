@@ -1,0 +1,11 @@
+{
+  "extends": ["config:base"],
+  "dependencyDashboard": true,
+  "enabledManagers": ["gradle"],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["org.springframework.*"],
+      "groupName": "spring dependencies"
+    }
+  ]
+}
