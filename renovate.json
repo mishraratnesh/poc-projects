@@ -1,11 +1,39 @@
 {
   "extends": ["config:base"],
+  "enabledManagers": ["gradle", "gradle-wrapper", "gradle-version-catalog"],
+  "schedule": ["every day"],
   "dependencyDashboard": true,
-  "enabledManagers": ["gradle"],
+  "prHourlyLimit": 2,
+  "prConcurrentLimit": 5,
+  "labels": ["dependencies", "renovate"],
   "packageRules": [
     {
-      "matchPackagePatterns": ["org.springframework.*"],
-      "groupName": "spring dependencies"
+      "matchPackagePatterns": ["org.springframework.boot", "org.springframework.*"],
+      "groupName": "Spring Boot & Spring Framework"
+    },
+    {
+      "matchPackagePatterns": ["com.fasterxml.jackson.*"],
+      "groupName": "Jackson Libraries"
+    },
+    {
+      "matchPackagePatterns": ["org.apache.commons.*", "commons-*"],
+      "groupName": "Apache Commons"
+    },
+    {
+      "matchPackagePatterns": ["org.slf4j.*", "ch.qos.logback.*"],
+      "groupName": "Logging (SLF4J, Logback)"
+    },
+    {
+      "matchPackagePatterns": ["org.junit.*", "org.mockito.*"],
+      "groupName": "Test Libraries"
+    },
+    {
+      "matchPackagePatterns": ["io.spring.*", "org.springframework.boot"],
+      "groupName": "Gradle Spring Plugins"
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": false
     }
   ]
 }

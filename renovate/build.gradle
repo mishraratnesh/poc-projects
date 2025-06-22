@@ -30,6 +30,27 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	// Spring Boot Starter Web
+	implementation 'org.springframework.boot:spring-boot-starter-web:2.6.7'
+
+	// Jackson
+	implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.3'
+
+	// Apache Commons
+	implementation 'org.apache.commons:commons-lang3:3.11'
+
+	// SLF4J
+	implementation 'org.slf4j:slf4j-api:1.7.25'
+
+	// Logback Classic
+	implementation 'ch.qos.logback:logback-classic:1.2.3'
+
+	// JUnit Jupiter
+	testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+
+	// Mockito
+	testImplementation 'org.mockito:mockito-core:3.3.3'
 }
 
 tasks.named('test') {
