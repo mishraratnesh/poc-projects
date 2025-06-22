@@ -41,7 +41,7 @@ dependencies {
 	implementation 'org.apache.commons:commons-lang3:3.11'
 
 	// SLF4J
-	implementation 'org.slf4j:slf4j-api:1.7.25'
+	implementation 'org.slf4j:slf4j-api:2.0.17'
 
 	// Logback Classic
 	implementation 'ch.qos.logback:logback-classic:1.2.3'
