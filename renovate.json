@@ -55,13 +55,13 @@
     },
     {
       "matchPackagePatterns": [
-        "org.springdoc*"
+        "org.springdoc.*"
       ],
       "groupName": "Spring Doc"
     },
     {
       "matchPackagePatterns": [
-        "org.xmlunit*"
+        "org.xmlunit.*"
       ],
       "groupName": "xmlunit core"
     },
