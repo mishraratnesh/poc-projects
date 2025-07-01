@@ -54,6 +54,18 @@
       "groupName": "Gradle Spring Plugins"
     },
     {
+      "matchPackagePatterns": [
+        "org.springdoc*"
+      ],
+      "groupName": "Spring Doc"
+    },
+    {
+      "matchPackagePatterns": [
+        "org.xmlunit*"
+      ],
+      "groupName": "xmlunit core"
+    },
+    {
       "matchUpdateTypes": [
         "patch"
       ],
