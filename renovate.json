@@ -13,6 +13,20 @@
   ],
   "packageRules": [
     {
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "versioningStrategy": "widen",
+      "enabled": true
+    },
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "major"
+      ],
+      "enabled": false
+    },
+    {
       "matchPackagePatterns": [
         "org.springframework.boot",
         "org.springframework.*"
@@ -64,20 +78,6 @@
         "org.xmlunit.*"
       ],
       "groupName": "xmlunit core"
-    },
-    {
-      "matchUpdateTypes": [
-        "patch"
-      ],
-      "versioningStrategy": "widen",
-      "enabled": true
-    },
-    {
-      "matchUpdateTypes": [
-        "minor",
-        "major"
-      ],
-      "enabled": false
     }
   ]
 }
