@@ -16,7 +16,6 @@
       "matchUpdateTypes": [
         "patch"
       ],
-      "versioningStrategy": "widen",
       "enabled": true
     },
     {
