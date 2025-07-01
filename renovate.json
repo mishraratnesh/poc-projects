@@ -31,7 +31,7 @@
       "groupName": "Gradle Spring Plugins"
     },
     {
-      "matchUpdateTypes": ["patch"],
+      "matchUpdateTypes": ["minor"],
       "automerge": false
     }
   ]
