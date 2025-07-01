@@ -54,7 +54,7 @@ dependencies {
 
 	implementation 'org.xmlunit:xmlunit-core:2.10.1'
 
-	implementation 'org.springdoc:springdoc-openapi-ui:1.6.0'
+	implementation 'org.springdoc:springdoc-openapi-ui:1.8.0'
 }
 
 tasks.named('test') {
