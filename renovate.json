@@ -29,7 +29,7 @@
       "matchPackagePatterns": [
         "^spring-boot.*"
       ],
-      "allowedVersions": "3.0.x",
+      "allowedVersions": "^3\\.[01]\\.\\d+$",
       "rangeStrategy": "bump",
       "groupName": "Spring Boot Starters Patch Only"
     },
