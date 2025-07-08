@@ -27,11 +27,11 @@
     },
     {
       "matchPackagePatterns": [
-        "^org\\.springframework\\.boot.*"
+        "^spring-boot.*"
       ],
       "allowedVersions": "3.0.x",
       "rangeStrategy": "bump",
-      "groupName": "Spring Boot & Spring Framework"
+      "groupName": "Spring Boot Starters Patch Only"
     },
     {
       "matchPackagePatterns": [
