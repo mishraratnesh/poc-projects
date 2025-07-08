@@ -30,6 +30,7 @@
         "org.springframework.boot",
         "org.springframework.*"
       ],
+      "rangeStrategy": "bump",
       "groupName": "Spring Boot & Spring Framework"
     },
     {
