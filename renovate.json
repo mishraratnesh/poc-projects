@@ -30,6 +30,7 @@
         "org.springframework.boot",
         "org.springframework.*"
       ],
+      "allowedVersions": "3.0.x",
       "rangeStrategy": "bump",
       "groupName": "Spring Boot & Spring Framework"
     },
