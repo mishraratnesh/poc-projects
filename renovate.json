@@ -26,14 +26,12 @@
       "enabled": false
     },
     {
-      "matchPackageNames": [
-        "spring-boot-starter",
-        "spring-boot-starter-web",
-        "spring-boot-starter-test"
+      "matchPackagePatterns": [
+        "org.springframework.boot"
       ],
       "allowedVersions": "3.0.x",
       "rangeStrategy": "bump",
-      "groupName": "Spring Boot Patch Updates"
+      "groupName": "Spring Boot & Spring Framework"
     },
     {
       "matchPackagePatterns": [
