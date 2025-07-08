@@ -27,7 +27,7 @@
     },
     {
       "matchPackagePatterns": [
-        "org.springframework.boot"
+        "^org\\.springframework\\.boot.*"
       ],
       "allowedVersions": "3.0.x",
       "rangeStrategy": "bump",
