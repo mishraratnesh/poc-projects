@@ -52,7 +52,7 @@ dependencies {
 	// Mockito
 	testImplementation 'org.mockito:mockito-core:3.3.3'
 
-	implementation 'org.xmlunit:xmlunit-core:2.10.1'
+	implementation 'org.xmlunit:xmlunit-core:2.10.3'
 
 	implementation 'org.springdoc:springdoc-openapi-ui:1.6.0'
 
