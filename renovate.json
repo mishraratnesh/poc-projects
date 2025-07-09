@@ -1,24 +1,32 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:base",
+    ":dependencyDashboard",
+    ":groupAllNonMajor",
+    ":enableVulnerabilityAlertsWithLabel",
+    ":semanticCommits",
+    ":semanticCommitTypeAll(deps)"
   ],
   "enabledManagers": [
     "gradle",
     "gradle-wrapper"
   ],
-  "dependencyDashboard": true,
   "labels": [
     "dependencies",
     "renovate"
   ],
+  "separateMinorPatch": true,
   "packageRules": [
     {
+      "description": "Allow patch updates for all dependencies",
       "matchUpdateTypes": [
         "patch"
       ],
       "enabled": true
     },
     {
+      "description": "Disable direct minor and major updates to reduce noise",
       "matchUpdateTypes": [
         "minor",
         "major"
@@ -26,18 +34,22 @@
       "enabled": false
     },
     {
+      "description": "Enable grouped updates for Spring Boot",
       "matchPackagePatterns": [
         "^spring-boot.*"
       ],
-      "groupName": "Spring Boot Starters Patch Only"
+      "groupName": "Spring Boot Updates",
+      "enabled": true
     },
     {
+      "description": "Group Jackson dependencies",
       "matchPackagePatterns": [
         "com.fasterxml.jackson.*"
       ],
       "groupName": "Jackson Libraries"
     },
     {
+      "description": "Group Apache Commons",
       "matchPackagePatterns": [
         "org.apache.commons.*",
         "commons-*"
@@ -45,13 +57,15 @@
       "groupName": "Apache Commons"
     },
     {
+      "description": "Group Logging Frameworks",
       "matchPackagePatterns": [
         "org.slf4j.*",
         "ch.qos.logback.*"
       ],
-      "groupName": "Logging (SLF4J, Logback)"
+      "groupName": "Logging Libraries"
     },
     {
+      "description": "Group Testing Libraries",
       "matchPackagePatterns": [
         "org.junit.*",
         "org.mockito.*"
@@ -59,29 +73,42 @@
       "groupName": "Test Libraries"
     },
     {
+      "description": "Group Spring Gradle Plugins",
       "matchPackagePatterns": [
         "io.spring.*",
         "org.springframework.boot"
       ],
-      "groupName": "Gradle Spring Plugins"
+      "groupName": "Spring Gradle Plugins"
     },
     {
+      "description": "Group SpringDoc Libraries",
       "matchPackagePatterns": [
         "org.springdoc.*"
       ],
-      "groupName": "Spring Doc"
+      "groupName": "Spring Doc Libraries"
     },
     {
+      "description": "Group XMLUnit",
       "matchPackagePatterns": [
         "org.xmlunit.*"
       ],
-      "groupName": "xmlunit core"
+      "groupName": "XMLUnit Libraries"
     },
     {
+      "description": "Group Lombok",
       "matchPackagePatterns": [
         "org.projectlombok.*"
       ],
-      "groupName": "project lombok"
+      "groupName": "Lombok Library"
     }
-  ]
+  ],
+  "ignorePaths": [
+    "**/buildSrc/**"
+  ],
+  "gradle": {
+    "enabled": true
+  },
+  "gradle-wrapper": {
+    "enabled": true
+  }
 }
