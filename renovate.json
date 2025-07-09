@@ -29,8 +29,6 @@
       "matchPackagePatterns": [
         "^spring-boot.*"
       ],
-      "allowedVersions": "3.3.x",
-      "rangeStrategy": "bump",
       "groupName": "Spring Boot Starters Patch Only"
     },
     {
@@ -78,6 +76,12 @@
         "org.xmlunit.*"
       ],
       "groupName": "xmlunit core"
+    },
+    {
+      "matchPackagePatterns": [
+        "org.projectlombok.*"
+      ],
+      "groupName": "project lombok"
     }
   ]
 }
