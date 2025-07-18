@@ -13,6 +13,7 @@
     "renovate"
   ],
   "separateMinorPatch": true,
+  "baseBranches": ["main"],
   "packageRules": [
     {
       "description": "Allow patch updates for all dependencies",
