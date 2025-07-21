@@ -1,6 +1,6 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '3.3.0'
+	id 'org.springframework.boot' version '3.3.13'
 	id 'io.spring.dependency-management' version '1.1.7'
 }
 
@@ -32,7 +32,7 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
 	// Spring Boot Starter Web
-	implementation 'org.springframework.boot:spring-boot-starter-web:2.6.7'
+	implementation 'org.springframework.boot:spring-boot-starter-web:2.6.15'
 
 	// Jackson
 	implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.3'
