@@ -54,7 +54,7 @@ dependencies {
 
 	implementation 'org.xmlunit:xmlunit-core:2.10.3'
 
-	implementation 'org.springdoc:springdoc-openapi-ui:1.6.0'
+	implementation 'org.springdoc:springdoc-openapi-ui:1.6.15'
 
 	implementation 'org.projectlombok:lombok:1.16.0'
 }
